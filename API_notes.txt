@@ -1,0 +1,51 @@
+https://api.openweathermap.org/data/2.5/weather?q={city name}&appid=9ff26a9788a3fd635e3a1d6f45ef531d
+https://api.openweathermap.org/data/2.5/weather?q={city name},{country code}&appid=9ff26a9788a3fd635e3a1d6f45ef531d
+https://api.openweathermap.org/data/2.5/weather?q={city name},{state code},{country code}&appid=9ff26a9788a3fd635e3a1d6f45ef531d
+https://api.openweathermap.org/data/2.5/weather?id={city id}&appid=9ff26a9788a3fd635e3a1d6f45ef531d
+Example:
+    GET: https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=9ff26a9788a3fd635e3a1d6f45ef531d
+
+JSON response:
+    {
+      "coord": {
+        "lon": -0.1257,
+        "lat": 51.5085
+      },
+      "weather": [
+        {
+          "id": 802,
+          "main": "Clouds",
+          "description": "scattered clouds",
+          "icon": "03d"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 285.51,
+        "feels_like": 285.1,
+        "temp_min": 284.14,
+        "temp_max": 286.76,
+        "pressure": 1019,
+        "humidity": 88
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 3.09,
+        "deg": 240
+      },
+      "clouds": {
+        "all": 34
+      },
+      "dt": 1656826504,
+      "sys": {
+        "type": 2,
+        "id": 2019646,
+        "country": "GB",
+        "sunrise": 1656820129,
+        "sunset": 1656879615
+      },
+      "timezone": 3600,
+      "id": 2643743,
+      "name": "London",
+      "cod": 200
+    }
