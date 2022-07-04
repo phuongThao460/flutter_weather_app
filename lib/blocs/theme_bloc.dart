@@ -10,7 +10,7 @@ class ThemeBloc extends Bloc<ThemeEvent, ThemeState> {
 
   @override
   Stream<ThemeState> mapEventToState(ThemeEvent themeEvent) async* {
-    late ThemeState newThemeState;
+    late ThemeState newThemeState; //late initialize error
     if(themeEvent is ThemeEventChanged){
       final weatherCondition = themeEvent.weatherConditional;
       if(weatherCondition == 'Clouds'){
